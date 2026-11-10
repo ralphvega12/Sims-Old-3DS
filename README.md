@@ -8,22 +8,20 @@ An optimized configuration and homebrew setup for running *The Sims* smoothly on
 
 ## 📋 Installation Guide
 
-### Step 1: Install the Homebrew Executable
-1. Extract `Sims old 3DS.zip`.
-2. Move `sims.3dsx` to the `/3ds/` folder on your SD card (`sdcard_root/3ds/sims.3dsx`).
+### Step 1: Generate Game Files
+1. Visit the **Sims 3DS Builder** website.
+2. Insert and upload/drag all **4 PC installation discs** into the web builder tool to generate the processed game assets.
+3. Download the generated output files.
 
-### Step 2: Install the Luma3DS LayeredFS Performance Patch
-1. Copy the `0004000000000000` folder from the zip file.
-2. Paste it into your Luma titles directory: `sdcard_root/luma/titles/`.
-3. Your final path on the SD card must look like this:
-   `sdcard_root/luma/titles/0004000000000000/romfs/UserData/Options.iff`
+### Step 2: Install Homebrew & Luma Patch
+1. Download `Sims.old.3DS.zip` from the **Releases** page.
+2. Extract the zip file on your computer.
+3. Move `sims.3dsx` to the `/3ds/` folder on your SD card (`sdcard_root/3ds/sims.3dsx`).
+4. Copy the `0004000000000000` folder into your Luma titles directory (`sdcard_root/luma/titles/`).
+   * *Verification:* Your final path must be `sdcard_root/luma/titles/0004000000000000/romfs/UserData/Options.iff`.
 
-### Step 3: Enable Game Patching
-1. Power off your 3DS.
-2. Hold down **SELECT** and turn on the 3DS to open the Luma3DS configuration menu.
-3. Make sure **Enable game patching** is enabled `(x)`.
-4. Press **START** to save and reboot.
-
-### Step 4: Supply Game Data Files
-1. Copy your extracted legitimate base game data files to your working game folder on the SD card.
-2. **Performance Note:** Ensure Expansion Packs 1–7 are removed to maintain optimal performance and stability on Old 3DS systems.
+### Step 3: Enable Game Patching & Add Files
+1. Power off your 3DS. Hold **SELECT** while turning it on to open the Luma3DS configuration menu.
+2. Ensure **Enable game patching** is checked `(x)`, then press **START** to save and reboot.
+3. Place your generated base game files into your working game directory on the SD card.
+4. **Performance Note:** Ensure Expansion Packs 1–7 are removed to maintain smooth frame rates on Old 3DS hardware.
